@@ -30,7 +30,7 @@
         <a class="navbar-brand" href="#">Sticky top</a>
       </div>
       <div class="container">
-        <a class="navbar-brand" href="#hero">@@ICON@@></a>
+        <a class="navbar-brand" href="#hero" img scr="MZ.pdf"></a>
       <button class="navbar-toggler" type="button"    
           data-bs-toggle="collapse"   data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon">@@ICON@@</span>
@@ -45,9 +45,8 @@
       </div> 
     </div>
   </nav>
-    <!-- Hero section -->
-    <!--finally conquered the elusive image linkadge! gaahh!-->
-    @@@@@ hero vs hero-section
+    <!-- Hero section hero vs hero-section-->
+    <!--finally conquered the elusive image linkadge! gaahh!--> 
     
     <section id="hero-section">
       <div id="hero-img" class="center ms-auto"></div>
@@ -82,7 +81,7 @@
       
             <div class=" col-md-6 col-xl-3">
               <h5><b><tt>HTML</tt></b></h5>
-              <img src="img/html5.png">
+              <i class="bi bi-filetype-html"></i>
               <div><p>Laying down the Foundation</p></div>
               <br><br> 
             
@@ -190,27 +189,31 @@
         </div>  
       </div>
     </section>
-    <!-- Contact Section -->
+    <!-- Contact Section
+    npm i bootstrap-icons-->
     <section id="contact" class="d-grid gap-2 col-6 mx-auto">
       <h1>Contact Me</h1>
       <h2>Open to Networking and Mentorships</h2> 
-      <div class="contact-container col-md-4">
+      <div class="contact-container d-grid gap-2 col-md-6 mx-auto">
         <div class="row">
-          <button href="https://instagram.com/morqueue" class="col">
+          <button href="mailto:marian.zumbado@gmail.com" class="col">
+            <a href="mailto:marian.zumbado@gmail.com"
+            target="mailto:marian.zumbado@gmail.com">
+                <p><i class="bi bi-envelope"></i></p>
+          </button> 
+          <button href="https://www.linkedin.com/in/" class="col">
+            <a href="https://www.linkedin.com/in/marian-zumbado-dev-uxdesign/" target="https://www.linkedin.com/in/marian-zumbado-dev-uxdesign/">
+                <p><i class="bi bi-linkedin"></i></p>
+          </button>
+        <button href= "https://github.com/MarianZ-ux" class="col">
+            <a href="https://github.com/MarianZ-ux">
+                <p><i class="bi bi-github"></i></p>
+        </button>
+        <button href="https://instagram.com/mrz.jetpack/photos" class="col">
             <a href="https://instagram.com/morqueue" target="https://instagram.com/morqueue">
-            <img src="img/insta.png"></a>
-          </button>
-          <button href="mailto:marian.zumbado@gmail.com>" class="col">
-            <a href="mailto:marian.zumbado@gmail.com>" target="mailto:marian.zumbado@gmail.com">
-            <img src="img/gmail.png"></a>
-          </button>
-          
-        <div class="skill-container col-md-4">
-            <p><i class="bi bi-linkedin"></i></p>
-            <p>https://www.linkedin. com/in/marian-zumbado-2038baa0/</p>
-        <div class="skill-container col-md-4">
-            <p><i class="bi bi-github"></i>
-            <p>https://github.com/MxZ-521<p>
+                <p><i class="bi bi-instagram"></i></p>
+        </button>
+        </div>
       </div>
     </section>
 
@@ -228,4 +231,3 @@
     </script>
   </body>
 </html>
-
