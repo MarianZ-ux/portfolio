@@ -7,6 +7,9 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #F4C7AB;
     text-emphasis: bold !important;
+    font-family: rival-sans-narrow, sans-serif;
+    font-style: normal;
+    font-weight: 300;
   }
   #hero-section {
     background-color: #DEEDF0;
