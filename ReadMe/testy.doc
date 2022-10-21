@@ -1,159 +1,114 @@
-<!----Notes   >[]
-/* * * Contact Section * */
-color #C1A3A3 
-i::hoover:before 
 
-a:active {
-  min-height: 50px;
-  width: 50px;
-  color: #B2B8A3;
-}
-a:hover {
-  color: #7FA998;
-}
-a:link {
-  color: #7FA998;
-}
-a:visited {
-  color: #F4C7AB;
-  filter: brightness(75%);
-}
-***/
-<!---Photo Gallery------> 	
-				<br><br><br><br>
-				<hr><h1><span>Portfolio  Capstone   Projects</span></hr><br><br><hr>
-					<div class="heading-text"><p>Click an image to view my UX Capstone Projects </p></div>
-	    <div class="container"></div>
-				</h1>
-		==============
-					<li>
-						<div>
-							<a href="  insert destination URL here  " title=" nsert title " alt="Clickable hyperlink for  " target="_blank" >
-								<img src="https://picsum.photos/200/300?random=3  .webp" />
-						</div>
-						<div class="overlay"><span> Boop </span></div>
-					</li>
-/* ======================================
-Responsive Image gallery Style rules
-======================================
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
-  font-family: 'EB Garamond', Montserrat, Geneva, Lato, sans-serif;
-}
-.container {
-  padding: 40px 5%;
-}
-.heading-text {
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-.heading-text span {
-  font-weight: 100;
-}
-/***
-ul {
-  list-style: none;
+  position: relative;
 }
 
-/* * * Project & Capstone & Gallery:  * * */
-.photo-container:nth-child(1) .photo {
-   background-image: 
-   url(https://picsum.photos/200/300?random=1);
+#hero-section {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)), 
+    url("img/vinyl-records.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 15%;
+  color: #fafafa;
 }
-.photo-container:nth-child(2) .photo {
-   background-image: 
-   url(https://picsum.photos/200/300?random=2);
-}
-.photo-container:nth-child(3) .photo {
-   background-image: 
-   url(https://picsum.photos/200/300?random=3); 
-}
-.photo-container:nth-child(4) .photo {
-   background-image: 
-   url(https://picsum.photos/200/300?random=4);
-}
-.photo-container:nth-child(5) .photo {
-   background-image: 
-   url(https://picsum.photos/200/300?random=5);
-}
-.photo-container:nth-child(6) .photo {
-   background-image: 
-   url(https://picsum.photos/200/300?random=6);
-}
-.photo-container:nth-child(7) .photo {
-   background-image: 
-   url(https://picsum.photos/200/300?random=7);
-}
-.photo-container:nth-child(8) .photo {
-   background-image: 
-   url(https://picsum.photos/200/300?random=8);
-}
-.photo-container:nth-child(9) .photo {
-   background-image: 
-   url(https://picsum.photos/200/300?random=9);
-}
-* * */
 
-	<!-- Carousel Bottom Buttons -->
-			<div class="carousel slide" id="carousel-content" data-bs-ride="carousel">
-				<div class="carousel-indicators">
-					<button class="" type="button" data-bs-target="#carousel-content" data-bs-slide-to="0"></button>
-					<button type="button" data-bs-target="#carousel-content" data-bs-slide-to="1" class=""></button>
-					<button type="button" data-bs-target="#carousel-content" data-bs-slide-to="2" class="active" aria-current="true"></button>
-				</div>
+#ash-headshot {
+  width: 20%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  display: block;
+  border-radius: 50%;
+  border: 3px, solid, white;
+}
 
-				<!-- Carousel Content -->
-				<div class="carousel-inner">
+nav{
+  background-color: #230903;
+}
 
-					<div class="carousel-item" data-interval="3000">
-						<div class="ReflectMe">
-							<img src="/img/MZReflect.png" alt="Blue background">
-							<div class="carousel-caption">
-								<h6>
-									You have to <span class="highlight">decide who you are</span> and <span class="underline">force the world to deal with you</span>, not with its idea of you. 
-								</h6>
-								<p>Grace Hopper</p>
-							</div>
-						</div>
-					</div>
+.navbar-toggler-icon {
+  color: #fafafa;
+}
 
-					<!-- Carousel Slide 2 -->
-					<div class="carousel-item">
-						<div class="clouds">
-							<img src="/img/rockface.jpg" alt="Blue background">
-							<div class="carousel-caption">
-								<h6>
-									"Creativity is intelligence having fun." <span class="highlight">I want to be improbable, beautiful, and afraid of nothing</span>, as though I had wings.
-								</h6>
-								<p> Albert Einstein </p>
-							</div>
-						</div>
-					</div>
+#inspiration-section, #footer-section, #mission-section {
+  background-color: #776472;
+}
 
-					<!-- Carousel Slide 3 -->
-					<div class="carousel-item active">
-						<div class="rockface"
-							<img src="/img/rockface.jpg" alt="Blue background">
-							<div class="carousel-caption">
-								<h3>Anything you do not <span class="highlight">give freely and abundantly</span> becomes lost to you. You open your safe and find ashes.
-								</h3>
-								<p> Neil Gaiman </p>
-							</div>
-						</div>
-					</div>
-				
-				<!-- Carousel Prev/Next -->
-					<button class="carousel-control-prev" type="button" data-bs-target="#carousel-content" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon"></span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carousel-content" data-bs-slide="next">
-						<span class="carousel-control-next-icon"></span>
-					</button>
-		  		</div>
-				</div>
-			</div>
+#skills-section, #contact-section {
+/*   background-color: #FFF9FB; */
+  background-color: #FFF2F1;
+}
+
+#skills-section i {
+  font-size: 50px;
+}
+
+section {
+  min-height: 20vh;
+  padding: 75px;
+}
+
+nav img {
+  height: 48px;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  object-position: center;
+  height: 75vh;
+  
+  overflow: hidden;
+}
+
+.carousel-item:after {
+  content:"";
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background: rgba(0,0,0,0.3);
+}
+
+.carousel-caption {
+  z-index: 1;
+}
+
+#skills-section img {
+  width: 5vw;
+}
+
+#contact-section i {
+  font-size: 35px;
+}
+
+#contact-section i:hover {
+  color: #51E5FF;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+p, h5 {
+  font-family: 'Lora', serif;
+}
+
+#mission-section, #footer-section {
+  color: #EAEAEA;
+}
+
+#inspiration-section h1 {
+  color: #EAEAEA;
+}
+
+.bold-text {
+  font-weight: bold;
+}
