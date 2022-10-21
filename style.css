@@ -7,9 +7,9 @@
     rgba(0, 0, 0, 0.5)), 
     url(img/redEscapeKey.jpg);
   position: relative;
-  background-position: 25% 50%;
+  background-position: center;
   background-size: cover;
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   padding: clamp(5px, 45vh, 50px) 0.3;
   color:#2c374c;
@@ -21,8 +21,8 @@
 	border-radius:50%;
 	background-position: center;
 	background-size: contain;
-    height:clamp(350px, 85vh, 250px);
-    width:clamp(300px, 85vh, 170px);
+    height:clamp(275px, 85vh, 250px);
+    width:clamp(300px, 85vh, 100px);
 	border:3px, #212529, solid;
 }
 .transbox {
@@ -44,7 +44,7 @@
           NAVBAR SECTION
 ======================================*/
 .navbar {
-	min-height: 200px;
+	min-height: 100px;
 	background: linear-gradient(#776472, #230903) !important;
 	position: fixed;
 	top: 0;
@@ -69,12 +69,14 @@
     CONTACT SECTION
 ======================================*/
 #contact {
-	padding: clamp(50px, 20vh, 50px) 0;
-	margin: 0;
-	width: 100%;
-	font-size: 2em;
-	vertical-align: middle;
+  padding: clamp(5px, 45vh, 50px) 0.3;
+  position: relative;
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ 
+  font-size: 2em;
   background-color:#776472;
   color:#fafafa;
 }
@@ -96,6 +98,7 @@
   margin: 0px;
   font-family: var('EB Garamond', serif);
   position: relative;
+  background-color: #230903;
 }
 section {
   min-height: 20vh;
@@ -236,31 +239,26 @@ ul {
 /* ======================================
         CAROUSEL CONTAINER
 ======================================*/
+
+/* * *Carousel container * * */
 {box-sizing:border-box}
 #carousel-section{
   position: relative;
-  background-position: 25%, 50%;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: clamp(5px, 80vh, 50px) 0.3;
 }
 /* Slideshow container */
-.carousel-container {
-  max-width: 25px;
-  position: relative;
-  background-position: 25%, 50%;
+.carousel-inner img {
+  object-fit: cover;
+  object-position: center;
+  height: 55vh;
+  overflow: hidden;
   margin: auto;
 }
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
+.carousel-item:after {
+  content:"";
   position: absolute;
   top:0;
   bottom:0;
@@ -283,7 +281,6 @@ ul {
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
-  color: #717171;
 }
 @keyframes fade {
   from {opacity: .4}
