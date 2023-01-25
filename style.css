@@ -22,7 +22,7 @@
 	background-position: center;
 	background-size: contain;
     height:clamp(300px, 85vh, 250px);
-    width:clamp(300px, 85vh, 100px);
+    width:clamp(275px, 85vh, 100px);
 	border:3px, #212529, solid;
 }
 .transbox {
