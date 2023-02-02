@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Navigation and Links | Contact</title>
+        <!--Marian Zumbado-->
+    </head>
+    <body>
+        <header id="top">
+            <h1>Navigation and Links | Contact</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html ">About</a></li>
+                    <li><a href="contact.html ">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <p>This is the about contact.</p>
+    </body>
+</html>
+
+<section>
+    <h2>Recipes</h2>
+        <section>
+            <h3>Creamy Vegetable Bread</h3>
+            <img src="">
+            <p>lorem ipsum</p>
+            <a href="" >Call to action!</a>
+        </section>
+    </section>
+    
+    ======================================
+        CAROUSEL CONTAINER
+======================================*/
+
+/* * *Carousel container * * */
+{box-sizing:border-box}
+#carousel-section{
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: clamp(5px, 80vh, 50px) 0.3;
+}
+/* Slideshow container */
+.carousel-inner img {
+  object-fit: cover;
+  object-position: center;
+  height: 55vh;
+  overflow: hidden;
+  margin: auto;
+}
+.carousel-item:after {
+  content:"";
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background: rgba(0,0,0,0.3);
+}
+.carousel-caption {
+  z-index: 0;
+} 
+/* "next button" position right of img*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+* html {
+  scroll-behavior: auto !important;
+}
+    
