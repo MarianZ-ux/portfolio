@@ -204,9 +204,10 @@ Responsive Image gallery Style rules
 #gallery{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
+  gap: 4px;
 }
 #gallery-section {
+  padding: clamp(150px, 10vh, 250px) 0;
   max-width: 350px;
   display: flex;
   flex-direction: column;
@@ -214,7 +215,7 @@ Responsive Image gallery Style rules
   background-color: var(--dune);
   border-radius: 0.25rem;
   box-shadow: var(--box-shadow);
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
   margin: 0 0 0 1rem;
 }
 /* ======================================
