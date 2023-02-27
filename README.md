@@ -1,4 +1,5 @@
 # Portfolio
-Portfolio Website coded entirely by Marian Zumbado
-Portfolio
-Portfolio Website coded entirely by Marian Zumbado Capstone_Projects_Portfolio.github.io Compilation of highlited projects built from the ground up, scratch, an empty console staring back at me. Includes: Hero Section Portfolio Gallary Carousel with Photo & Inspirational quotes Skill badges earned: Advanced Beginner Contact Me Section <-----HIRE ME--------> I'm hungry to learn and would bring all my my Expert Level Soft Skills to your company!
+
+Portfolio Compilation of highlighted projects built from HTML and up by Marian Zumbado-Ravenswood.
+
+Portfolio includes: Hero Section, Capstone Projects Gallery, Inspiration Carousel, Skill Badges, and Contact Section <-----Why you should HIRE MEEEE!!!--------> I'm hungry to learn and would bring all my my Expert Entry Level Skills to your company!
