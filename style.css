@@ -15,7 +15,18 @@
   --filter-shadow: drop-shadow(-0.5rem 0.5rem 0.5rem var(--med-gray));
 }
 
-/* ----- BODY STYLES ----- */
+/* ----- BODY STYLES ----- *//* Center website */
+.main {
+  background-color: #2c374c;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
 body{
   margin: 0px auto;
   font-family: Montserrat, sans-serif;
@@ -25,24 +36,15 @@ body{
   line-height: 1.35;
   box-sizing: border-box;
   text-align: justify, row, relative, center;
-  position: relative;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 section {
   min-height: 20vh;
   padding: 80px;
-  
-  position: relative;
-  background-size: contain;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+
 }
 .container {
   position: relative;
+  background-position: center;
 }
 /* ======================================
     HERO SECTION
@@ -75,7 +77,7 @@ section {
 #name-display {
   margin: .5%;
   color: #2c374c;
-  text-align: relative right;
+  text-align: relative center;
 	text-transform: none;
 }
 #tagline {
@@ -89,7 +91,6 @@ section {
           NAVBAR SECTION
 ======================================*/
 .navbar {
-  background-color: #FFF2F1;;
   position: fixed;
 	top: 0;
 	width: 100%;
@@ -101,7 +102,7 @@ section {
 }
 .navbar img {
   border-radius: 25%;
-  color: #FFF2F1;
+  color: #90A19D;
 }
 /* ======================================
     CONTACT SECTION 
@@ -109,8 +110,8 @@ section {
 #contact {
   padding: clamp(5px, 45vh, 50px) 0.3;
   font-size: 2em;
+ 
 }
-
 h3{
   padding: 0.5rem;
   margin-bottom: 0;
@@ -122,12 +123,12 @@ h2 {
 	color: var(--white);
   color: #afafaf;
 	font-weight: bold;
-	font-size: 44px;
+	font-size: 34px;
 	font-family: 'EB Garamond', serif;
 	text-transform: uppercase;
     margin: 34px auto 34px auto;
     border: 0;
-    height: 80px;/*2px*/
+    height: 60px;/*80px*/
     width: 80%;
     background-image: 
       linear-gradient(to right, 
@@ -137,8 +138,9 @@ h2 {
 } 
 hr, h1 {
 	color: #afafaf;
+  word-break: break-all;
 	font-weight: bold;
-	font-size: 64px;
+	font-size: 44px;
 	font-family: 'EB Garamond', serif;
   text-align: relative center;
 	text-transform: uppercase;
@@ -156,7 +158,7 @@ hr, h1 {
 	/*margin: 5%;*/
   width: 5vw;
 	font-weight:lighter;
-	font-size: 24px;
+	font-size: 14px;
 	font-family: Montserrat, sans-serif;
   letter-spacing: .9px;
   line-height: 1.5;
@@ -179,6 +181,8 @@ img{
   margin: 0 auto;
   box-shadow: var(--box-shadow);
   border-radius: 0.25rem;
+  max-block-size: 200px;
+  max-width: 200px;
 }
 /* ======================================
 Responsive Image gallery Style rules 
@@ -186,69 +190,53 @@ Responsive Image gallery Style rules
 * {
   box-sizing: border-box;
 }
-
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
+.gallery .row {
   margin: 10px -16px;
 }
-
 /* Add padding BETWEEN each column */
-.row,
-.row > .column {
+.gallery.row > .column {
   padding: 8px;
 }
-
 /* Create three equal columns that floats next to each other */
-.column {
+.gallery > .column {
   float: left;
   width: 33.33%;
   display: none; /* Hide all elements by default */
 }
-
 /* Clear floats after rows */ 
-.row:after {
+.gallery > .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Content */
-.content {
+.gallery > .content, .img {
   background-color: white;
   padding: 10px;
+  image-rendering:100%;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.25rem;
 }
-
 /* The "show" class is added to the filtered elements */
-.show {
+.gallery > .show {
   display: block;
 }
-.btn {
+.gallery > .btn {
   border: none;
   outline: none;
-  padding: 12px 16px;
+  padding: 12px, 16px;
   background-color: white;
   cursor: pointer;
 }
-.btn:hover {
+.gallery > .btn:hover {
   background-color: #ddd;
 }
-.btn.active {
+.gallery .btn.active {
   background-color: #666;
   color: white;
 }
@@ -316,7 +304,7 @@ h1 {
     background-color: #776472;
     color: #EAEAEA;
   }
-  #carousel-section, #skills-section, #contact {
+  #carousel, #skills, #contact {
       background-color: #2c374c;
       color: #FFF2F1;
   }
