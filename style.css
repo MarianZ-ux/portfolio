@@ -3,6 +3,7 @@
   --light-gray: #eaeaea;
   --med-gray: #555;
   --white: #fff;
+  --cream-white: #FFF2F1;
   /*  color palette from: https://color.adobe.com/Colliding-Power-color-theme-7210405/ */
   --dune: #363432;
   --blumine: #196774;
@@ -32,8 +33,16 @@ body{
 }
 section {
   min-height: 20vh;
-  padding: 75px;
-  container: fluid;
+  padding: 80px;
+  
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container {
+  position: relative;
 }
 /* ======================================
     HERO SECTION
@@ -45,11 +54,7 @@ section {
     url(img/redEscapeKey.jpg);
   position: relative;
   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   padding: clamp(5px, 45vh, 50px) 0.3;
-  color:#2c374c;
 }
 #hero-img {
   background-image: url(img/BayBricks.jpg);
@@ -62,33 +67,41 @@ section {
 	border:3px, #212529, solid;
 }
 .transbox {
-	margin: 30px;
+	margin: 18px;
 	background-color: #FFF2F1;
 	border: 1px solid #2c374c;
-	opacity: 0.8;
+	opacity: 0.6;
 }
-.transbox p {
-  margin: 5%;
-  font-size: 24px;
-  font-weight: bold;
+#name-display {
+  margin: .5%;
   color: #2c374c;
-  font-family: 'EB Garamond', serif;
+  text-align: relative right;
+	text-transform: none;
+}
+#tagline {
+  margin: .5%;
+  font-weight: bold;
+  color: #afafaf;
+  font-family: Montserrat, sans-serif;
+  text-transform: none;
 }
 /* ======================================
           NAVBAR SECTION
 ======================================*/
 .navbar {
+  background-color: #FFF2F1;;
   position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 2;
-    -webkit-tap-highlight-color: #776472,transparent;
+    -webkit-tap-highlight-color: #776472;
 }
 .navbar-toggler-icon {
-  color: #fafafa !important;
+  color: #FFF2F1 !important;
 }
 .navbar img {
   border-radius: 25%;
+  color: #FFF2F1;
 }
 /* ======================================
     CONTACT SECTION 
@@ -96,7 +109,6 @@ section {
 #contact {
   padding: clamp(5px, 45vh, 50px) 0.3;
   font-size: 2em;
-  
 }
 
 h3{
@@ -122,21 +134,8 @@ h2 {
         rgba(0, 0, 0, 0), 
         rgba(175, 175, 175, .35), 
         rgba(0, 0, 0, 0));
-}
-.p {
-	/*margin: 5%;*/
-  width: 5vw;
-	font-weight: ;
-	font-size: 24px;
-	font-family: Montserrat, sans-serif;
-  letter-spacing: .9px;
-  line-height: 1.5;
-  max-width: 75ch;
-  padding: 0.5rem 0;
-  margin: 0 auto;
-  text-align: row, relative, center;
-}
-hr , h1 {
+} 
+hr, h1 {
 	color: #afafaf;
 	font-weight: bold;
 	font-size: 64px;
@@ -146,14 +145,28 @@ hr , h1 {
     margin: 34px auto 34px auto;
     border: 0;
     height: 80px;/*2px*/
-    width: 80%;
+    width: 100%;
     background-image: 
       linear-gradient(to right, 
         rgba(0, 0, 0, 0), 
         rgba(175, 175, 175, .35), 
         rgba(0, 0, 0, 0));
+}        
+.p {
+	/*margin: 5%;*/
+  width: 5vw;
+	font-weight:lighter;
+	font-size: 24px;
+	font-family: Montserrat, sans-serif;
+  letter-spacing: .9px;
+  line-height: 1.5;
+  max-width: 75ch;
+  padding: 0.5rem 0;
+  margin: 0 auto;
+  text-align: row, relative, center;
 }
-a{
+
+a {
   display: block;
   padding: 1rem;
   font-weight: bold;
@@ -169,58 +182,80 @@ img{
 }
 /* ======================================
 Responsive Image gallery Style rules 
-  padding-bottom: 1rem;
-  max-width: 350px;
-  margin: 0 0 0 1rem;
-    padding: clamp(150px, 10vh, 250px) 2;
 ======================================*/
-#gallery h2{
-	grid-column: 1/-1;
+* {
+  box-sizing: border-box;
 }
-#gallery h3{
-  padding: 2rem;
-  border-radius: 0.25rem 0.25rem 0 0;
-  background-color: var(--dune);
-  margin-bottom: 0;
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
 }
-#gallery p {
-  padding: 1rem;
-  background-color: var(--dune);
-  border-radius: 0 0 0.25rem 0.25rem;
-  }
-#gallery a{
-  width: fit-content;
-  text-decoration: none;
-  margin: 0.5rem auto;
-  border-radius: 0.25rem;
-  background-color: var(--dune);
-  }
-#gallery img{
-  width: 100%;
-  margin: 0 auto;
-  border-radius: 0;
-  box-shadow: none;
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
 }
-#gallery{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
 }
-#gallery-section {
-  max-width: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--dune);
-  border-radius: 0.25rem;
-  box-shadow: var(--box-shadow);
-  padding-bottom: 1rem;
-  margin: 0 0 0 1rem;
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #ddd;
+}
+.btn.active {
+  background-color: #666;
+  color: white;
 }
 /* ======================================
         SKILLS SECTION  
 ======================================*/
-#skills-section {
+#skills {
 	padding: clamp(150px, 10vh, 250px) 0;
 }
 .skills-container col {
@@ -231,7 +266,7 @@ Responsive Image gallery Style rules
 	gap: 300px;
 	height: 300px;
 }
-.skills-section img {
+.skills img {
 	object-fit: cover;
 	vertical-align: middle;
 	height: 10em;
@@ -292,7 +327,7 @@ Responsive Image gallery Style rules
     margin: 0;
     z-index: 2;
       -webkit-text-size-adjust: 100%;
-      -webkit-box-shadow: 0 8px 6px -3px; rgba:(0,0,0,.3);
+      -webkit-box-shadow: 0 8px 6px -3px; RGB:(0,0,0,.3);
       -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
       box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
   }
