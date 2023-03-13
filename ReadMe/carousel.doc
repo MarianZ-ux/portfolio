@@ -1,127 +1,155 @@
 		Gallery mk 3///
-    		<section>
-						<h3><span>Ultimate Capstone Project</span></h3>
-						<img src="https://picsum.photos/200/200?random=1.jpg" alt="" width="200" height="300">
-						<p><span>This entire website was coded from scratch as the final project of the Web Dev intro to code mini-bootcamp!<br> Right click & Inspect to check out my mad coding skills</span></p>					
-					</section>
-					<section>			
-						<h3><span>GitHub Repositories</span></h3>
-						<img src="img/gitMZsite.png" alt="Clickable hyperlink for GitHub" width="200">
-						<p>Projects ranging from 'Hello World" to this very portfolio</p>
-						<a href="https://github.com/MarianZ-ux" title="GitHub" target="_blank">Click to peruse complete list of projects</a>
-					</section>
-					<section>
-						<h3><span>Squarespace</span></h3>
-						<img src="img/earthZero.png" alt="image hyperlink for earth zero waste store" width="200">	
-						<p>UX Style Guide & clean up</p>		
-						<div class="image-item"><a href="https://www.earthzerowaste.com/" title="Squarespace website re-design for a clean, modern, white & black look as requested by the client" target="_blank">earth zero waste</a></div>
-					</section>
-					<section>	
-						<h3><span>Wix UX Analysis</span></h3>	
-						<img src="img/WixAnaly.png" alt="Clickable hyperlink for UX Style Guide Proposal" width="200">	
-						<p>UX Research Analysis & Style Guides for Website Redesign</p>
-						<a href="https://mzumbado.wixsite.com/twc301" title=" Wix Site" target="_blank">Poppin Joe’s Gourmet Kettle Korn</a>
-					</section>
-					<section>
-						<h3><span>Google Sites</span></h3>
-						<img src="img/gSitesMZ.png" alt="Clickable hyperlink for UX Style Guide Proposal" width="200">	
-						<p>Capstone Project including Digital Citizenship, Artificial Intelligence (AI), Internet of Things (IoT), and Extended Reality/ Augmented Reality (EX), Copyright, Fair Use, Creative Commons,Design Thinking, and the Constructivist Learning Theory</p>
-						<div class="image-item"><a href="https://sites.google.com/asu.edu/marian-zumbado-portfolio/home" title="Educative Project Portfolio" target="_blank">Technology Literacy; Problem Solving with Digital Technology Applications</a></div>
-					</section>
-					<section>
-						<h3><span>Piktochart</span></h3>
-							<img src="img/my-visual_poster.png" width="200" height="400" alt="Visual Poster created by website author">
-							<p>Graphic Design Visual Poster</p>
-							<a href="#" alt=""></a>
-					</section>
-					<section>
-						<h3><span>Digication Portfolio</span></h3>
-						<img src="img/ASUdigi.png" alt="Clickable hyperlink for university portfolio" width="200"><p>Arizona State University course project. Creating a university student portfolio</p>		
-						<a href="https://asu.digication.com/eng-102-marian-zumbados-digital-portfolio/home-1" target="_blank"><span>ASU Digication site</span></a>
-					</section>
-					<hr><h4><span>Interactive Games</span></h4>
-					<section>			
-						<h3><span>Magic 8-Ball</span></h3>
-						<img src="img/8ball.png" alt="Clickable hyperlink to game site" width="200" height="400">
-						<p>What will you ask the all-knowing Magic 8-Ball?</p>
-						<a href="https://wd2-module-7-midterm-00-project-game-1-magic8ba-mzumbado.asuwd1su21.repl.co/" target="_blank">Play the game!</a>
-					</section>
-					<section>		
-						<h3><span>Mad Libs</span></h3>
-						<img src="img/madLibs.png" alt="Clickable hyperlink to game site" width="200"><p>Interactive game to practice your Klingon Poetry</p>
-						<a href="https://wd2-module-3-00-skill-builder-mad-libs-madness-mzumbado.asuwd1su21.repl.co/" title="Mad Libs Game" target="_blank">Have fun with grammar!</a>
-					</section>
-					<section>		
-						<h3><span>Matching Card Game:<br>Star Trek Captains</span></h3>
-						<img src="img/matchingGame.png" alt="Clickable hyperlink for game site" width="200"><p>Interactive card matching game with your favorite captains</p>
-						<a href="https://wd2-module-9-final-03-project-game-3-match-game-mzumbado.kittykase.repl.co/ " title=" Matching Card Game" target="_blank"><span>Go Fish in space!</span></a>
-					</section>
-					<hr><h4><span>Lorem Ipsum: stand alone projects</span></h4>
-					<section>
-						<h3><span>Photography Website</span></h3>
-						<img src="https://picsum.photos/200/200?random=6.jpg" alt="Random lorem picsum image with hyperlink" width="200">	
-						<p>Photo gallery applying Lorem Picsum and Javascript interactive flip-card skills</p>	
-						<a href="https://module-7-06skillbuilder-photography-website-mzumbado.mzumbado.repl.co/" title=" Maise Wade Photography" target="_blank">Photography portfolio skillbuilder</a>
-					</section>
-					<section>	
-						<h3><span>Hello<br>World</span></h3>
-						<img src="img/errorDino.png" alt="Clickable hyperlink for authors first bio-page" width="200">
-						<p>First bio page coded entirely in HTML5</p>		
-						<a href="https://module-2-08-skillbuilder-introduce-yourself-mzumbado.asuwd1su21.repl.co/" title="M.Z's Baby Coder Bio Page" target="_blank">HTML Baby Coder Bio Page</a>
-					</section>
+
+
+
+			<div class="container-fluid">
+				<section id="gallery" class="row-text-center">
+				<h2>Capstone Gallery</h2><hr>
+				<div id="myBtnContainer">
+					<button class="button active" onclick="filterSelection('all')"> All Projects</button>
+					<button class="btn" onclick="filterSelection('UX')">UX</button>
+					<button class="btn" onclick="filterSelection('WebDev')">WebDev</button>
+					<button class="btn" onclick="filterSelection('Games')">Games</button>
+				</div>
+				<div class="row">
+					<div class="column UX">
+						<div class="content">
+							<img src="https://picsum.photos/200/200?random=1.jpg" alt="Random lorem picsum photo" style="width:100%">
+							<h4>Ultimate Capstone Project</h4>
+							<p>This entire website was coded from scratch as the final project of the Web Dev intro to code mini-bootcamp!<br> Right click & Inspect to check out my mad coding skills</p>
+						</div>
+					</div>
+					<div class="column UX">
+						<div class="content">
+							<img src="img/earthZero.png" alt="hyperlink for earth zero waste store" style="width:100%">
+							<h4>Squarespace</h4><a href="https://www.earthzerowaste.com/" title="earthZeroWaste" target="_blank">UX Style Guide + Website Redesign</a>
+							<p>Squarespace website re-design for a clean, modern, white + black look as requested by the client</p>
+						</div>
+					</div>
+					<div class="column UX">
+						<div class="content">
+							<img src="img/WixAnaly.png" alt="hyperlink for UX Style Guide Proposal"style="width:100%">
+							<h4>Wix UX Analysis</h4>
+							<a href="https://mzumbado.wixsite.com/twc301" title=" Wix Site" target="_blank">Poppin Joe’s Gourmet Kettle Korn</a>
+							<p>UX Research Analysis + Style Guides for Website Redesign</p>
+						</div>
+					</div>
+					<div class="column UX">
+						<div class="content">
+							<img src="img/gSitesMZ.png" alt="hyperlink to Capstone Project on Google sites" style="width:100%">
+							<h4>Google Sites</h4>
+							<a href="https://sites.google.com/asu.edu/marian-zumbado-portfolio/home" target="_blank" title=<h4>"Educative Capstone Project"</h4></a>
+							<p><strong>Technology Literacy; Problem Solving with Digital Technology Applications</strong></p>
+							<p>Capstone Project including Digital Citizenship, Artificial Intelligence (AI), Internet of Things (IoT), and Extended Reality/ Augmented Reality (EX), Copyright, Fair Use, Creative Commons,Design Thinking, and the Constructivist Learning Theory</p>
+						</div>
+					</div>
+					<div class="column WebDev">
+						<div class="content">
+							<img src="img/gitMZsite.png" alt="hyperlink for GitHub profile" style="width:100%">
+							<h4>GitHub Profile and my 55+ Repositories and counting!</h4>
+							<p>Projects ranging from 'Hello World" to this very portfolio</p>
+						</div>
+					</div>
+					<div class="column WebDev">
+						<div class="content">
+							<img src="img/my-visual_poster.png" width="200" height="400" alt="Visual Poster created by website author" style="width:100%">
+							<h4>Piktochart</h4><a href="#" alt=""></a>
+							<p>Introduction to Graphic Design Visual Poster</p>
+						</div>
+					</div>
+					<div class="column WebDev">
+						<div class="content">
+							<img src="https://picsum.photos/200/200?random=6.jpg" alt="Random lorem picsum image with hyperlink"style="width:100%">
+							<a href="https://module-7-06skillbuilder-photography-website-mzumbado.mzumbado.repl.co/" title=" Maise Wade Photography" target="_blank"><h4>Photography portfolio skillbuilder</h4></a>
+							<p>>Photo gallery applying Lorem Picsum and Javascript interactive flip-card skills</p>
+						</div>
+					</div> 
+					<div class="column WebDev">
+					<div class="content">
+						<img src="img/errorDino.png" alt="hyperlink to this web authors first coded bio-page"style="width:100%">
+						<a href="https://module-2-08-skillbuilder-introduce-yourself-mzumbado.asuwd1su21.repl.co/" title="M.Z's Baby Coder Bio Page" target="_blank"><h4>Hello<br>World</h4></a>
+						<p>First bio page coded entirely in HTML5. Every developer starts with the launch of the Dinosaur 404 Baby Coder Page</p>
+					</div>
+					</div>
+					<div class="column Games">
+						<div class="content">
+							<img src="img/8ball.png" alt="Clickable hyperlink to game site" style="width:100%">
+							<a href="https://wd2-module-7-midterm-00-project-game-1-magic8ba-mzumbado.asuwd1su21.repl.co/" target="_blank"<h4>Magic 8-Ball</h4></a>
+							<p>What will you ask the all-knowing Magic 8-Ball?</p>
+						</div>
+					</div>
+					<div class="column Games">
+						<div class="content">
+							<img src="img/madLibs.png" alt="hyperlink to mad libs game site" style="width:100%">
+							<a href="https://wd2-module-3-00-skill-builder-mad-libs-madness-mzumbado.asuwd1su21.repl.co/" title="Mad Libs Game" target="_blank"><h4>Mad Libs</h4></a>
+							<p>Interactive game to practice your Klingon Poetry</p>
+						</div>
+					</div>
+					<div class="column Games">
+						<div class="content">
+							<img src="img/madLibs.png" alt="hyperlink to mad libs game site" style="width:100%">
+							<a href="https://wd2-module-9-final-03-project-game-3-match-game-mzumbado.kittykase.repl.co/ " title="Matching Card Game" target="_blank"><h4>Matching Card Game</h4></a>
+							<p>Interactive card matching game with your favorite Star Trek Captains</p>
+						</div>
+					</div>
+					<div class="column Games">
+					<div class="content">
+						<img src="img/ASUdigi.png" alt="hyperlink for freshman university portfolio"style="width:100%">
+						<a href="https://asu.digication.com/eng-102-marian-zumbados-digital-portfolio/home-1" target="_blank"><h4>ASU Digication site</h4></a>
+						<p>Arizona State University course project. Creating a university student portfolio</p>
+					</div>
+					</div>
+				</div>
 			</section>
----------------CSS----------------
-#gallery h2, h4, p {
-	grid-column: 1/-1;
+		</div>
+---------------CSS----------------_____
+* {
+  box-sizing: border-box;
 }
-#gallery h3{
-  padding: 1rem;
-  border-radius: 0.25rem, 0.25rem, 0, 0;
-  background-color: var(--dune);
-  margin-bottom: 0;
+======================================*/  padding: clamp(150px, 10vh, 250px) 0;
+  column-span: 3;
+#gallery {
+  padding: clamp(150px, 10vh, 250px) 0;
+  margin: auto;
 }
-#gallery p {
-  padding: 1rem;
-  border-radius: 0, 0, 0.25rem, 0.25rem;
-  background-color: var(--dune);
-  text-decoration: none;
-  }
-#gallery a{
-  width: fit-content;
-  text-decoration: none;
-  margin: 0 auto;
-  border-radius: 0;
-  
-  }
-#gallery img{
-  border-image-width: cover;
-  margin: 0 auto;
-  border-radius: 0;
-  box-shadow: none;
-  background-size: contain;
+#gallery h1 {
+  word-break: break-all;
+}
+#gallery > .row {
+  margin: 10px -16px;
+}
+/* Add padding BETWEEN each column */
+#gallery .row, .row > .column {
+  padding: 8px;
+}
+/* Create three equal columns that floats next to each other */
+#gallery .column {
+  float: left;
+  width: 33.33%;
+  margin: auto;
+  display: none; /* Hide all elements by default */
+}
+/* Clear floats after rows */ 
+#gallery .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.gallery img {
+	object-fit: cover;
+  width: 200px;
+}
+/* Content */
+#gallery .content {
+  background-color: white;
+  padding: 10px;
   height:clamp(300px, 85vh, 250px);
   width:clamp(275px, 85vh, 100px);
 }
-#gallery{
-  column-span: 3;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 4px;
+/* The "show" class is added to the filtered elements */
+#gallery .show {
+  display: block;
 }
-#gallery-section {
-  padding: clamp(150px, 10vh, 250px) 0;
-  max-width: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--dune);
-  border-radius: 0.25rem;
-  box-shadow: var(--box-shadow);
-  padding-bottom: 0rem;
-  margin: 0 0 0 1rem;
-  background-size: contain;
-}
-
 
 Carousel -------------------------------
 
