@@ -14,7 +14,6 @@
   --small-shadow: -0.25rem 0.25rem 0.5rem var(--med-gray);
   --filter-shadow: drop-shadow(-0.5rem 0.5rem 0.5rem var(--med-gray));
 }
-
 /* ----- BODY STYLES ----- *//* Center website */
 .main {
   background-color: #2c374c;
@@ -75,7 +74,7 @@ section {
 	opacity: 0.6;
 }
 #name-display {
-  margin: .5%;
+  margin: .5% , -5%;
   color: #2c374c;
   text-align: relative center;
 	text-transform: none;
@@ -109,11 +108,22 @@ section {
 ======================================*/
 #contact {
   padding: clamp(5px, 45vh, 50px) 0.3;
-  font-size: 2em;
- 
+  text-align: center; 
+}
+.contact-container col{
+  flex: auto; 
+	max-width: 350px;
+  padding: 1rem;
+  display: block;
+  margin: 0 auto;
+  box-sizing: border-box;
+  object-fit: cover;
+  border-radius: 0;
+  background-size: contain;
+  text-align: row, relative, center; 
 }
 h3{
-  padding: 0.5rem;
+  padding: 2rem;
   margin-bottom: 0;
   font-size: 24px;
   font-family: Montserrat, sans-serif;
@@ -154,11 +164,11 @@ hr, h1 {
         rgba(175, 175, 175, .35), 
         rgba(0, 0, 0, 0));
 }        
-.p {
+p {
 	/*margin: 5%;*/
   width: 5vw;
 	font-weight:lighter;
-	font-size: 14px;
+	font-size: 16px;
 	font-family: Montserrat, sans-serif;
   letter-spacing: .9px;
   line-height: 1.5;
@@ -167,154 +177,76 @@ hr, h1 {
   margin: 0 auto;
   text-align: row, relative, center;
 }
-
 a {
   display: block;
   padding: 1rem;
   font-weight: bold;
   color: var(--white);
   text-decoration: none;
-  border-radius: 0.25rem;
+  border-radius: 0;
 }
 img {
   display: block;
   margin: 0 auto;
-  box-shadow: var(--box-shadow);
   border-radius: 0.25rem;
-<<<<<<< HEAD
   box-sizing: border-box;
     color: #230903;
     object-fit: cover;
-    vertical-align: middle;
-
+  vertical-align: middle;
   }
-=======
-  max-block-size: 200px;
-  max-width: 200px;
-}
->>>>>>> 925492209f2ae4472cbdeff79fc195ec2cea543b
-/* ======================================
+/* ======
+================================
 Responsive Image gallery Style rules 
-/* Center website */
-#gallery .content {
-  background-color: white;
-  padding: 3px;
-}
-<<<<<<< HEAD
-#gallery h2, h4, p {
-	grid-column: 1/-1;
-}
-#gallery h3{
-  padding: 1rem;
-  border-radius: 0.25rem, 0.25rem, 0, 0;
-  background-color: var(--dune);
-  margin-bottom: 0;
-}
-.gallery p {
-  padding: 1rem;
-  border-radius: 0, 0, 0.25rem, 0.25rem;
-  text-decoration: none;
-}
-.gallery a{
-  width: fit-content;
-  text-decoration: none;
-  margin: 0 auto;
-  border-radius: 0;  
-}
-.gallery img{
-  object-fit: cover;
-  border-image-width: cover;
-  margin: 0 auto;
-  border-radius: 0;
-  box-shadow: none;
-  background-size: contain;
-}
-#gallery > .row {
-  margin: 10px -16px;
-}
-/* Add padding BETWEEN each column */
-#gallery .row, .row > .column {
-  padding: 8px;
-}
-/* Create three equal columns that floats next to each other */
-#gallery .column {
-=======
-.gallery .row {
-  margin: 10px -16px;
-}
-/* Add padding BETWEEN each column */
-.gallery.row > .column {
-  padding: 8px;
-}
-/* Create three equal columns that floats next to each other */
-.gallery > .column {
->>>>>>> 925492209f2ae4472cbdeff79fc195ec2cea543b
-  float: left;
-  width: 33.33%;
-  margin: auto;
-  display: none; /* Hide all elements by default */
+================================*/
+#gallery-section {
   
-}
-<<<<<<< HEAD
-#gallery {
-  padding: clamp(150px, 10vh, 250px) 0;
+  justify-content: space-between;
   column-span: 3;
   display: grid;
+  flex-direction: column;
+  background-size: contain;
   grid-template-columns: 1fr 1fr 1fr;
   gap: .4px;
-}
-#gallery-section {
-  max-width: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--dune);
   border-radius: 0.25rem;
-  box-shadow: var(--box-shadow);
   padding-bottom: 0rem;
   margin: 0 0 0 1rem;
-  background-size: contain;
 }
-
-=======
-/* Clear floats after rows */ 
-.gallery > .row:after {
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.column { 
+  float: left;
+  width: 25%;
+}
+.row {
+  margin: 8px -16px;
+}
+.row, .row > .column {
+  padding: 8px;
+}
+.row:after {
   content: "";
   display: table;
   clear: both;
 }
-/* Content */
-.gallery > .content, .img {
+.content {
   background-color: white;
   padding: 10px;
-  image-rendering:100%;
-  width: 200px;
-  display: block;
-  margin: 0 auto;
-  display: block;
-  margin: 0 auto;
-  box-shadow: var(--box-shadow);
-  border-radius: 0.25rem;
 }
-/* The "show" class is added to the filtered elements */
-.gallery > .show {
-  display: block;
+#gallery{
+  padding: clamp(150px, 10vh, 250px) 0;
+  box-sizing: border-box;
+  max-width: 1000px;
+  margin: auto;
 }
-.gallery > .btn {
-  border: none;
-  outline: none;
-  padding: 12px, 16px;
-  background-color: white;
-  cursor: pointer;
-}
-.gallery > .btn:hover {
-  background-color: #ddd;
-}
-.gallery .btn.active {
-  background-color: #666;
-  color: white;
-}
->>>>>>> 925492209f2ae4472cbdeff79fc195ec2cea543b
 /* ======================================
         SKILLS SECTION  
 ======================================*/
@@ -343,75 +275,58 @@ Responsive Image gallery Style rules
 /* @keyframes fade {
   from {opacity: 1}
   to {opacity: .4}
-}
+}*/
 /* On hover*/
 @media (hover:hover){ }
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
     color:#C1A3A3;
-  } */
+  }
   /* Box sizing pseudo elements  ***/
   img ::after, ::before {
     box-sizing: border-box;
     color: #230903;
-    min-height: 50px;
-    min-width: 50px;
   }
-  .btn, .button {
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    cursor: pointer;
-  }
-  /* .btn:hover {
-    background-color: #ddd;
+  /* padding: 12px 16px;
+   .btn:hover {
+      min-height: 50px;
+      width: 50px;
   } */
-  .btn.active {
-    background-color: #666;
+  .button, .href :active {
+    background-color:#C1A3A3;
     color: white;
+    min-height: 50px;
+    width: 50px;
   } 
-  .button, .btn:hover::before{
-    min-height: 50px;
-    width: 50px;
-    color:#230903;
-  }
-  .button, .btn:hover::after {
-    color: #717171;
+  .button, .bi:hover::after {
+    color: #666;
     filter:brightness(75%);
-  }
-  .bi:hover::before {
     min-height: 50px;
     width: 50px;
-    color:#C1A3A3;
   }
-  .bi:hover::after {
-    color: #717171;
-    filter: brightness(75%);
+  .button, .bi:hover::before {
+    background-color:#717171;
+    color: white;
+    min-height: 50px;
+    width: 50px;
   }
   #meet-me, #gallery {
-    background-color: #776472;
+    background-color: #2c374c;
     color: #EAEAEA;
   }
   #carousel, #skills, #contact {
-      background-color: #2c374c;
+      background-color: #776472;
       color: #FFF2F1;
   }
   #navbar, #footer{
     background: #fafafa;
     color: #2c374c;
-    
+    font-weight: bold;
     margin: 0;
-    z-index: 2;
+    z-index: 5%, -5%;
       -webkit-text-size-adjust: 100%;
-<<<<<<< HEAD
       -webkit-box-shadow: 0 8px 6px -3px; rgb:(0,0,0,.3);
       -moz-box-shadow: 0 8px 6px -6px rgb (0,0,0,.3);
       box-shadow: 0 8px 6px -6px rgb (0,0,0,.3);
   }
   /* min-height: 100px; */
-=======
-      -webkit-box-shadow: 0 8px 6px -3px; RGB:(0,0,0,.3);
-      -moz-box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
-      box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
-  }
->>>>>>> 925492209f2ae4472cbdeff79fc195ec2cea543b
