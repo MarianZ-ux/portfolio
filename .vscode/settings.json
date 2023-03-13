@@ -1,9 +1,19 @@
 {
     "liveServer.settings.port": 5501,
     "cSpell.words": [
+<<<<<<< HEAD
         "btns",
+=======
+        "bootcamp",
+>>>>>>> 925492209f2ae4472cbdeff79fc195ec2cea543b
         "Codewars",
         "Digication",
-        "picsum"
+        "picsum",
+        "Piktochart",
+        "Poppin",
+        "skillbuilder",
+        "Squarespace",
+        "Udemy",
+        "Zumbado"
     ]
 }
