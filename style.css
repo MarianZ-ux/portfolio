@@ -122,10 +122,10 @@ a {
     HERO SECTION
 ======================================*/
 #hero-section {
-  background-image: linear-gradient(
+  background-image: url(https://picsum.photos/id/20/800/600),
+    linear-gradient(
     rgba(0, 0, 0, 0.5), 
-    rgba(0, 0, 0, 0.5)), 
-    url(img/redEscapeKey.jpg);
+    rgba(0, 0, 0, 0.5));
   position: relative;
   background-position: center;
   padding: clamp(5px, 45vh, 50px) 0.3;
@@ -138,49 +138,52 @@ a {
 	background-size: contain;
     height:clamp(300px, 85vh, 250px);
     width:clamp(275px, 85vh, 100px);
-	border:3px, #212529, solid;
+	border:6px, #2c374c solid;
 }
 .transbox {
 	margin: 18px;
 	background-color: #FFF2F1;
 	border: 1px solid #2c374c;
-	opacity: 0.6;
+	opacity: 0.9;
   text-align: center;
 }
 #name-display {
   margin: .5%;
   color: #2c374c;
-  text-align: center;
 	text-transform: none;
+  font-weight: bold;
 }
 #tagline {
-  margin: .5%;
+  margin: auto;
   font-weight: bold;
-  color: #afafaf;
+  color: #2c374c;
   font-family: Montserrat, sans-serif;
   text-transform:lowercase;
-  text-align: center;
 }
 /* ======================================
           NAVBAR SECTION
+          <div class="background">
+				<div class="transbox">
 ======================================*/
-#navbar {
+#nav {
   position: fixed;
 	top: 0;
   font-weight: bold;
 	width: 100%;
+  background-color: #90A19D;
 	z-index: 5%;
     -webkit-tap-highlight-color: #776472;
     -webkit-text-size-adjust: 100%;
 }
 .navbar-toggler-icon {
-  color: #90A19D;
+  background-color: #90A19D;
   border:3px, #212529, solid;
   border-radius: 0.25rem;
 }
 .navbar img {
   border:3px, #212529, solid;
-  color:whitesmoke;
+  color:#776472;
+  border-radius: 0.70rem;
 }
 /* =================================
     CONTACT SECTION 
