@@ -51,7 +51,7 @@
     
     <div id="nav-collapse" class="collapse navbar-collapse">
       <div class="navbar-nav ms-auto">
-<!--         <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+<!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
         <a class="nav-link" href="#mission-section">Mission</a>
         <a class="nav-link" href="#skills-section">Skills</a>
         <a class="nav-link" href="#inspiration-section">Inspiration</a>
@@ -437,7 +437,26 @@ ul {
   min-height: 50px;
   width: 50px;
   }
-
+-------------------
+#skills-section {
+  background-color: #431c53;
+  padding: clamp(50px, 10vh, 100px) 0;
+}
+#skills-section h1 {
+  text-align: center;
+  padding: 20px;
+}
+.skills-section p {
+  margin: auto;
+  letter-spacing: .9px;
+}
+#skills-section img {
+  height: 10em;
+  display: inline;
+}
+.container col{
+  margin: auto;
+}
 /* * *Carousel container * * */
 {box-sizing:border-box}
 #carousel-section{
