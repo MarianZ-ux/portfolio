@@ -3,3 +3,70 @@
 .DS_Store
 .DS_Store
 .DS_Store
+
+CSS_Store
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/* @keyframes fade {
+  from {opacity: 1}
+  to {opacity: .4}
+}
+/* On hover*/
+@media (hover:hover){ }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color:#C1A3A3;
+  } */
+  /* Box sizing pseudo elements  ***/
+  img ::after, ::before {
+    box-sizing: border-box;
+    color: #230903;
+    min-height: 50px;
+    min-width: 50px;
+  }
+  .btn, .button {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+  }
+  /* .btn:hover {
+    background-color: #ddd;
+  } */
+  .btn.active {
+    background-color: #666;
+    color: white;
+  } 
+  .button, .btn:hover::before{
+    min-height: 50px;
+    width: 50px;
+    color:#230903;
+  }
+  .button, .btn:hover::after {
+    color: #717171;
+    filter:brightness(75%);
+  }
+  .bi:hover::before {
+    min-height: 50px;
+    width: 50px;
+    color:#C1A3A3;
+  }
+  .bi:hover::after {
+    color: #717171;
+    filter: brightness(75%);
+  }
+  #meet-me, #gallery {
+    background-color: #776472;
+    color: #EAEAEA;
+  }
+  #carousel, #skills, #contact {
+      background-color: #2c374c;
+      color: #FFF2F1;
+  }
+  #navbar, #footer{
+    background: #fafafa;
+    color: #2c374c;
+    

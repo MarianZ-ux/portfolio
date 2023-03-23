@@ -118,17 +118,18 @@ a {
   text-decoration: none;
   border-radius: 0;
 }
-/* ======================================
+/* ================================
     HERO SECTION
-======================================*/
+=================================*/
 #hero-section {
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.5), 
     rgba(0, 0, 0, 0.5)), 
-    url(img/redEscapeKey.jpg);
+    url(https://picsum.photos/id/20/200/200);
   position: relative;
   background-position: center;
   padding: clamp(5px, 45vh, 50px) 0.3;
+  text-align: center;
 }
 #hero-img {
   background-image: url(img/BayBricks.jpg);
@@ -144,26 +145,24 @@ a {
 	margin: 18px;
 	background-color: #FFF2F1;
 	border: 1px solid #2c374c;
-	opacity: 0.6;
-  text-align: center;
+	opacity: 0.9;
 }
 #name-display {
   margin: .5%;
   color: #2c374c;
-  text-align: center;
 	text-transform: none;
 }
 #tagline {
-  margin: .5%;
+  margin: auto;
   font-weight: bold;
   color: #afafaf;
   font-family: Montserrat, sans-serif;
   text-transform:lowercase;
-  text-align: center;
+  
 }
-/* ======================================
+/* ==================================
           NAVBAR SECTION
-======================================*/
+==================================*/
 #navbar {
   position: fixed;
 	top: 0;
@@ -175,8 +174,8 @@ a {
 }
 .navbar-toggler-icon {
   color: #90A19D;
-  border:3px, #212529, solid;
-  border-radius: 0.25rem;
+  border: 3px, #212529, solid;
+  border-radius: 25rem;
 }
 .navbar img {
   border:3px, #212529, solid;
@@ -213,7 +212,6 @@ Responsive Image gallery Style rules
 }
 #gallery .row, .row > .column {
   padding: 8px;
-  
 }
 #gallery .content {
   color: white;
@@ -222,8 +220,7 @@ Responsive Image gallery Style rules
 #gallery {
   box-sizing: border-box;
 }
-#gallery{
-  padding: clamp(150px, 10vh, 250px) 0;
+#gallery {
   display: inline-block;
   align-content: relative;
   justify-content: space-between;
@@ -245,100 +242,105 @@ Responsive Image gallery Style rules
     width: 100%;
   }
 }
-/* ======================================
+/* ==================================
          SKILLS SECTION
-======================================*/
+===================================*/
 #skills-section {
-	padding: clamp(50px, 10vh, 150px) 0;
-  color: #FFF2F1;
-	text-align: center;
-	font-family: 'Rubik', sans-serif;
-	position: relative; 
+	padding: clamp(150px, 10vh, 250px) 0;
+  justify-content: space-between;
 }
-.skills p {
+.skills-container col {
   margin: auto;
-  letter-spacing: .9px;
-}
-#skills-container col {
-  margin: auto;
-}
-#skills img {
-	object-fit: cover;
-  height: 10em;
-  display: inline-flex;
-  /* min-height: 100px;
-  width: 100px; */
-}
-.skills > i {
-  font-size: 50px;
 }
 .flip-container-skills {
-    flex: auto; 
-    gap: 200px;
-    height: 400px;
-    position: relative;
+	flex: auto; 
+	gap: 300px;
+	height: 300px;
 }
-
+.skills img {
+	object-fit: cover;
+	vertical-align: middle;
+	height: 10em;
+  width: 5vw;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
 #skills .row:after {
   content: "";
   display: table;
   clear: both;
 }
-======================================
-/* Fading animation
+/* ======================================
+  Fading animation*/
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
-}  */
-/* @keyframes fade {
+} 
+@keyframes fade {
   from {opacity: 1}
   to {opacity: .4}
-}*/
-/* On hover*/
+}
+  /* On hover*/
 @media (hover:hover){ }
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
     color:#C1A3A3;
   }
   /* Box sizing pseudo elements  **/
-  /* img ::after, ::before {
+img ::after, ::before {
     box-sizing: border-box;
     color: #230903;
-  } */
+    min-height: 20px;
+    min-width: 20px; 
+  }
+.btn, .button {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+  }
   /* padding: 12px 16px;*/
 .btn:hover {
-      min-height: 50px;
-      width: 50px;
-  }
-.button :active {
+  background-color:#717171;
+}
+.btn.active {
     background-color:#C1A3A3;
     color: white;
   } 
-.bi :hover::after {
+.button, .btn:hover::before {
+    background-color:#717171;
+    color: white;
+    min-height: 100px;
+    width: 100px;
+  } 
+.button, .btn:hover::after {
     color: #666;
     filter:brightness(75%);
   }
-.bi :hover::before {
-    background-color:#717171;
-    color: white;
+#contact .bi:hover::before {
+    max-height: 100px;
+    width: 100px;
+    color:#C1A3A3;
   }
-#meet-me, #gallery {
+#contact .bi:hover::after {
+    color: #717171;
+    filter: brightness(75%);
+  }
+#gallery, #carousel, #contact {
     background-color: #2c374c;
     color: #EAEAEA;
   }
-#carousel, #skills, #contact {
+#skills, #meet-me {
       background-color: #776472;
       color: #FFF2F1;
-  }
-#footer{
-    background: #fafafa;
+    }
+#footer, #navigation {
+    /* background: #717171; */
+    color: #FFF2F1;
     font-weight: bold;
     letter-spacing: .9px;
   }
-  /* min-height: 100px;
-      z-index: 5%;
-      -webkit-text-size-adjust: 100%;
-      -webkit-box-shadow: 0 8px 6px -3px; rgb:(0,0,0,.3);
-      -moz-box-shadow: 0 8px 6px -6px rgb (0,0,0,.3);
-      box-shadow: 0 8px 6px -6px rgb (0,0,0,.3);
-  } */
+
