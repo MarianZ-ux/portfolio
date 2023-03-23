@@ -287,7 +287,7 @@ Responsive Image gallery Style rules
   display: table;
   clear: both;
 }
-======================================
+/* ====================================== */
 /* Fading animation
 .fade {
   animation-name: fade;
