@@ -141,7 +141,7 @@ a {
     width:clamp(275px, 85vh, 100px);
 	border:3px, #212529, solid;
 }
-.transbox {
+.transparent box {
 	margin: 18px;
 	background-color: #FFF2F1;
 	border: 1px solid #2c374c;
@@ -191,16 +191,23 @@ a {
 Responsive Image gallery Style rules 
 ================================*/
 #gallery-section {
-  justify-content: space-between;
   column-span: 3;
   display: grid;
-  flex-direction: column;
-  background-size: contain;
   grid-template-columns: 1fr 1fr 1fr;
   gap: .4px;
   border-radius: 0.25rem;
   padding-bottom: 0rem;
   margin: 0 0 0 1rem;
+}
+#gallery {
+  box-sizing: border-box;
+}
+#gallery {
+  display: inline-block;
+  align-content: relative;
+  justify-content: space-between;
+  flex-direction: column;
+  background-size: contain;
 }
 #gallery .column { 
   float: left;
@@ -216,16 +223,6 @@ Responsive Image gallery Style rules
 #gallery .content {
   color: white;
   padding: 10px; 
-}
-#gallery {
-  box-sizing: border-box;
-}
-#gallery {
-  display: inline-block;
-  align-content: relative;
-  justify-content: space-between;
-  flex-direction: column;
-  background-size: contain;
 }
 #gallery .row:after {
   content: "";
