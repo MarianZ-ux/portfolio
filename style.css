@@ -326,11 +326,11 @@ img ::after, ::before {
     color: #717171;
     filter: brightness(75%);
   }
-#gallery, #carousel, #contact {
+#carousel, #contact, #skills {
     background-color: #2c374c;
     color: #EAEAEA;
   }
-#skills, #meet-me {
+#meet-me, #gallery {
       background-color: #776472;
       color: #FFF2F1;
     }
